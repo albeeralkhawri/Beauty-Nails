@@ -1,0 +1,47 @@
+-workbench.action.quickOpen<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Beauty Nails</title>
+</head>
+<body>
+    <!--startnavbar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Beauty Nails</a>
+                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Prices list</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    </nav>
+    <!--Endnavbar-->
+    <!--Content-->
+    <div class="container-center text-center">
+       <h2>Welcome!</h2>
+       <h3>In beautiful nails</h3>
+       <p>We do beautiful nails with complete care</p>
+    </div>
+<script>
+    function myFunction(x) {
+    x.classList.toggle("change");
+    }
+</script>
+</body>
+</html>
