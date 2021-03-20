@@ -1,47 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Beauty Nails</title>
-</head>
-<body>
-    <!--startnavbar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+      <title>Beauty Nails</title>
+   </head>
+   <body>
+      <!--startnavbar-->
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Beauty Nails</a>
-                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
+               <a class="navbar-brand" href="index.html">Beauty Nails</a>
+               <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </div>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Prices list</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+               <ul class="nav navbar-nav">
+                  <li><a href="prices-list.html">Prices list</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
             </div>
-    </nav>
-    <!--Endnavbar-->
-    <!--Content-->
-    <div class="container-center text-center">
-       <h2>Welcome!</h2>
-       <h3>In beautiful nails</h3>
-       <p>We do beautiful nails with complete care</p>
-    </div>
-<script>
-    function myFunction(x) {
-    x.classList.toggle("change");
-    }
-</script>
-</body>
+         </div>
+      </nav>
+      <!--Endnavbar-->
+      <!--Content-->
+      <div class="container-fluid container-center text-center">
+      <div class="container featuredImage hiddenImg">
+      <h2>Welcome!</h2>
+      <div class="heading">
+         <h1>
+            In beautiful nails
+         </h1>
+         <h1 class="lead">
+            We do beautiful nails with complete care
+         </h1>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               <div class="item active">
+                  <img src="https://imgix.bustle.com/uploads/image/2019/1/31/a8a2f7f3-ec9a-42f5-a601-701e82378a11-fotolia_199494360_subscription_monthly_m.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress" alt="Los Angeles" style="width:100%;">
+                  <div class="carousel-caption">
+                     <h3>Gel Polish</h3>
+                     <p>We do the best always</p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="https://i2.wp.com/www.thetrendspotter.net/wp-content/uploads/2017/01/How-to-Remove-Gel-Nails-at-Home.jpg?fit=800%2C450&ssl=1" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption">
+                     <h3>Gel Extension</h3>
+                     <p>Our quality!</p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="https://www.hairspray.ie/resources/gel-nails.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                     <h3>Nail glitter</h3>
+                     <p>We use the finest materials!</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div class="container-center text-center">
+            <!--price button-->
+            <a class="Pricebutton btn" role="button" href="prices-list.html">Prices list</a>
+            <!--form start-->
+            <form id="regForm"  action="https://formspree.io/f/mleoanoz" method="POST">
+               <h5>Book Now</h5>
+               <!-- One "tab" for each step in the form: -->
+               <div class="tab">
+                  Full Name:
+                  <p><input placeholder="Full name..." oninput="this.className = ''" name="fname" type="text"></p>
+               </div>
+               <div class="tab">
+                  Contact Info:
+                  <p><input placeholder="E-mail..." oninput="this.className = ''" name="email" type="email"></p>
+                  <p><input placeholder="Phone..." oninput="this.className = ''" name="phone" type="tel"></p>
+               </div>
+               <div class="tab">
+                  Booking Date:
+                  <p><input placeholder="dd" oninput="this.className = ''" name="dd" type="date"></p>
+               </div>
+               <div class="tab">
+                  Our Services:
+                  <p>
+                     <select placeholder="Services" oninput="this.className = ''" name="Services" type="select">
+                        <option value="Gel Polish" selected>Gel Polish</option>
+                        <option value="Gel Polish Removal ">Gel Polish Removal</option>
+                        <option value="Gel Refill)">Gel Refill</option>
+                        <option value="Gel Removal">Gel Removal</option>
+                        <option value="Gel Extension">Gel Extension</option>
+                        <option value="Gel Overlay">Gel Overlay</option>
+                        <option value="Acrylic Removal">Acrylic Removal</option>
+                        <option value="Acrylic Refill">Acrylic Refill</option>
+                        <option value="Acrylic Extension">Acrylic Extension</option>
+                        <option value="Acrylic Overlay">Acrylic Overlay</option>
+                        <option value="Nail Art">Nail Art</option>
+                        <option value="Nail Fix">Nail Fix</option>
+                        <option value="File & Paint">File & Paint</option>
+                        <option value="Manicur">Manicure</option>
+                        <option value="File & Paint Toes">File & Paint Toes</option>
+                        <option value="Pedicure">Pedicure</option>
+                     </select>
+                  </p>
+               </div>
+               <div style="overflow:auto;">
+                  <div style="float:right;">
+                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                     <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                  </div>
+               </div>
+               <!-- Circles which indicates the steps of the form: -->
+               <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+               </div>
+            </form>
+            <div class="socialMediaLinks">
+               <a href="https://facebook.com"  class="fab fa-facebook-f"></a>
+               <a href="https://twitter.com"  class="fab fa-twitter"></a>
+               <a href="https://instagram.com"  class="fab fa-instagram"></a>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
