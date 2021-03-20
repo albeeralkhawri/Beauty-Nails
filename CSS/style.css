@@ -1,102 +1,399 @@
 @import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
-html,body{
-   background-color: #83ff9b!important;
-   font-family: 'Condiment', cursive!important;
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+ html,body{
+     background-color: #000000!important;
 }
-
-
 /* startnavbar */
+ .navbar-inverse .navbar-toggle:hover, .navbar-toggle {
+     -webkit-transition: all 0.35s ease-in-out;
+}
+ .navbar-inverse{
+     background-color: transparent!important;
+     border: none!important;
+     margin-top: 3px;
+}
+ ul{
+     float: right!important;
+     margin-right: 30px!important;
+}
+ .navbar-brand, ul{
+     font-size: 20px!important;
+     font-family: 'Condiment', cursive!important;
+}
+ h2{
+     font-family: 'Condiment', cursive!important;
+     font-size: 70px!important;
+     text-align: center;
+     margin-left: auto!important;
+     margin-right: auto!important;
+     color: #becec8!important;
+     margin-top: 10%!important;
+}
+h1{
+  font-family: 'Condiment', cursive!important;
+  color: #becec8!important;
+}
+ h3,.hometext{
+     font-family: 'Condiment', cursive!important;
+     font-size: 40px!important;
+     margin: 50px!important;
+     color: #becec8!important;
+}
+ .bar1, .bar2, .bar3 {
+     width: 35px;
+     height: 5px;
+     background-color: #ffffff!important;
+     border: none!important;
+     margin: 6px 0;
+     transition: 0.4s;
+}
+ .navbar-inverse .navbar-toggle{
+     border: none!important;
+}
+ .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-nav>li>a:hover{
+     background-color: rgba(255, 247, 247, 0.315)!important;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+ .collapse.in{
+     margin-right: auto!important;
+     margin-left: auto!important;
+     display: table!important;
+     max-width: 100%!important;
+}
+ .navbar-collapse{
+     margin-right: auto!important;
+     margin-left: auto!important;
+     max-width: 100%!important;
+     display: none!important;
+}
+ .navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{
+     color: #ffffff!important;
+}
+ .container-fluid>.navbar-collapse{
+     border: none!important 
+}
+ .container {
+     display: inline-block;
+     cursor: pointer;
+}
+ .bar1, .bar2, .bar3 {
+     width: 35px;
+     height: 5px;
+     background-color: #000000;
+     margin: 6px 0;
+     transition: 0.4s;
+}
+ .change .bar1 {
+     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+     transform: rotate(-45deg) translate(-9px, 6px);
+}
+ .change .bar2 {
+    opacity: 0;
+}
+ .change .bar3 {
+     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+     transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Endnavbar */
+/*Start form*/
+ * {
+     box-sizing: border-box;
+}
+ body {
+     background-color: #f1f1f1;
+}
+ #regForm {
+     background-color: #ffffffa8;
+     margin: 100px auto;
+     font-family: Raleway;
+     padding: 40px;
+     width: 70%;
+     min-width: 300px;
+}
+ h1 {
+     text-align: center;
+}
 
-.navbar-inverse .navbar-toggle:hover,
-.navbar-toggle {
-    -webkit-transition: all 0.35s ease-in-out;
-}
-.navbar-inverse{
-    background-color: transparent!important;
-    border: none!important;
-    margin-bottom: 70px!important;
-    margin-top: 3px;
-}
-ul{
-    float: right!important;
-    margin-right: 30px!important;
-}
-.navbar-brand,
-ul{
-    font-size: 20px!important;
-    font-family: 'Condiment', cursive!important;
-}
-h2{
-    font-family: 'Condiment', cursive!important; 
-    font-size: 70px!important;
-    text-align: center;
-    margin-left: auto!important;
-    margin-right: auto!important;
-}
-h3,p{
-    font-size: 40px!important;
-    margin: 50px!important;
-}
-.bar1,
-.bar2,
-.bar3 {
-	width: 35px;
-	height: 5px;
-    background-color: #000000!important;
-    border: none!important;
-	margin: 6px 0;
-	transition: 0.4s;
-}
-.navbar-inverse .navbar-toggle{
-    border: none!important;
-}
-.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-nav>li>a:hover{
-    border: none!important;
-    background-color: rgba(0, 0, 0, 0.363)!important;
+h5{
+  font-size: xx-large!important;
+  color: #000000
+
 }
 
-.collapse.in{
-    margin-right: auto!important;
-    margin-left: auto!important;
-    display: table!important;
-    max-width: 100%!important;
+ input,select {
+     padding: 10px;
+     width: 16rem!important;
+     font-size: 15px!important;
+     border: 1px solid #ccc;
+     border-radius: 4px;
 }
-.navbar-collapse{
-    margin-right: auto!important;
-    margin-left: auto!important;
-    max-width: 100%!important;
-    display: none!important;
+/* Mark input boxes that gets an error on validation: */
+ input.invalid {
+     background-color: #ffdddd;
+}
+/* Hide all steps by default: */
+ .tab {
+     display: none;
+}
+ button {
+     background-color: #4caf89;
+     color: #ffffff;
+     border: none;
+     padding: 10px 20px;
+     font-size: 17px;
+     font-family: Raleway;
+     cursor: pointer;
+}
+ button:hover {
+     opacity: 0.8;
+}
+ #prevBtn {
+     background-color: #bbbbbb;
+}
+/* Make circles that indicate the steps of the form: */
+ .step {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbbbbb;
+     border: none;
+     border-radius: 50%;
+     display: inline-block;
+     opacity: 0.5;
+}
+ .step.active {
+     opacity: 1;
+}
+/* Mark the steps that are finished and valid: */
+ .step.finish {
+     background-color: #4caf89;
+}
+ .socialMediaLinks a {
+     font-size: 26px;
+     margin: 0 10px 0 0;
+     color: #bbbbbb;
+     text-decoration: none!important;
+     margin-bottom: 3%;
+}
+ .list-group-item{
+     background-color: #3a3838!important;
+     color: #becec8;
+     font-size: x-large!important;
+     border: none!important;
+}
+ .list-group{
+     background-color: #3a3838!important;
+     width: 50%;
+     margin-left: 100%!important;
+}
+ .row{
+     margin-right: 0px!important;
+     margin-left: 0px!important;
+}
+/*end form*/
+/* imge slow up */
+ .hiddenImg {
+     opacity:0;
+}
+ .visibleImg {
+     opacity:1;
+}
+ .fa {
+     font-size: 20em;
+}
+ @keyframes fadeInUp {
+     from {
+         opacity: 0;
+         transform: translate3d(0, 20px, 0);
+    }
+     to {
+         opacity: 1;
+         transform: none;
+    }
+}
+ .fadeInUp {
+     animation-name: fadeInUp;
 }
 
-.navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{
-    color: #000000!important;
+
+/*start home page */
+.Pricebutton{
+  background-color: #383838;
+  font-size: x-large!important;
+  margin-top: 6%;
+  color: #fff;
+  font-family: auto;
 }
-.container-fluid>.navbar-collapse{
-    border: none!important
+
+.Pricebutton:hover{
+  background-color: #f85555;
+  color: #000000;
 }
-.container {
-    display: inline-block;
-    cursor: pointer;
+/* End home page */
+
+/* price list page */
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  width: 33.3%;
+  padding: 8px;
+  margin-bottom: 5%;
+  float: left;
+  display: grid;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: auto!important;
+}
+
+.price .white {
+  color: #eee;
+  font-size: auto!important;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/*Gallery Page*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/**THE SAME CSS IS USED IN ALL 3 DEMOS**/    
+/**gallery margins**/  
+ul.gallery{    
+  margin-left: 3vw;     
+  margin-right:3vw;  
+  }    
+  
+  .zoom {      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+  }     
+  
+  .zoom:hover,  
+  .zoom:active,   
+  .zoom:focus {
+  /**adjust scale to desired size, 
+  add browser prefixes**/
+  -ms-transform: scale(0.5);    
+  -moz-transform: scale(0.5);  
+  -webkit-transform: scale(0.5);  
+  -o-transform: scale(0.5);  
+  transform: scale(1.3);    
+  position:relative;      
+  z-index:100;  
   }
   
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #000000;
-    margin: 6px 0;
-    transition: 0.4s;
+  /**To keep upscaled images visible on mobile, 
+  increase left & right margins a bit**/  
+  @media only screen and (max-width: 768px) {   
+  ul.gallery {      
+  margin-left: 15vw;       
+  margin-right: 15vw;
   }
   
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  /**TIP: Easy escape for touch screens,
+  give gallery's parent container a cursor: pointer.**/
+  .DivName {cursor: pointer}
   }
 
-  /* Endnavbar */
+  /* End Gallery Page */
