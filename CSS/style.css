@@ -674,7 +674,7 @@ form .btn-gen {
 }
 
 .Get li {
-	margin-bottom: 13%!important;
+	margin-bottom: 10%!important;
 }
 
 .business-hours li:last-child {
@@ -689,8 +689,10 @@ form .btn-gen {
 .tel,
 .email,
 .address,
-a {
+a,
+.pull-right {
 	text-decoration: none!important;
+	font-size: 15px!important;
 }
 
 .tel,
@@ -708,9 +710,24 @@ a {
 }
 
 .list-unstyled {
-	min-inline-size: -webkit-fill-available;
+	min-inline-size: -webkit-fill-available!important;
+	margin: auto;
 }
 
+.Section{
+	display: contents!important;
+}
+.Sections{
+	padding-bottom: 10%!important;
+	margin-bottom: 10%!important;
+}
+
+.Get{
+	margin-bottom: 10%;
+	padding-bottom: 0px!important;
+	font-size: 10px!important;
+	display: grid!important;
+}
 .col-sm-4 {
 	width: 100%!important;
 }
@@ -741,7 +758,7 @@ a {
 }
 
 .container {
-	width: 100%;
+	width: 100%!important;
 }
 
 .glyphicon {
