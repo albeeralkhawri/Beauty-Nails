@@ -93,6 +93,7 @@ h3,
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav>li>a {
 	color: #ffffff!important;
+	font-size: large!important;
 }
 
 .navbar-inverse .navbar-brand {
@@ -231,7 +232,7 @@ button:hover {
 }
 
 .socialMediaLinks a {
-	font-size: 26px;
+	font-size: 26px!important;
 	margin: 0 10px 0 0;
 	color: #bbbbbb;
 	text-decoration: none!important;
