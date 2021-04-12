@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+      <title>Beauty Nails</title>
+   </head>
+   <body>
+      <!--startnavbar-->
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">Beauty Nails</a>
+               <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+               <ul class="nav navbar-nav">
+                  <li><a href="prices-list.html">Prices list</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="aboutus.html">About us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--Endnavbar-->
+      <!--Content-->
+      <div class="container-fluid container-center text-center">
+         <div class="container featuredImage hiddenImg">
+            <h2>Contact Us</h2>
+            <div class="heading">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h3 class="form-heading text-center">How we can help? </h3>
+                     <h4 class="form-heading-small text-center">Do you have any question?</h4>
+                     <form id="form" class="form-styling"  action="https://formspree.io/f/mleoanoz" method="POST">
+                        <div class="form-group">
+                           <label class="sr-only" for="name">Name:</label>
+                           <input type="text" class="form-control" name="fname" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="email">Email address</label>
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="name">Phone:</label>
+                           <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="message">Message</label>
+                           <textarea rows="6" name="message" class="form-control" id="message" name="textarea" placeholder="Please write your enquire here" required></textarea>
+                        </div>
+                        <button type="submit" value="Submit" class="btn btn-gen center-block">Send</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="socialMediaLinks serv">
+               <a href="https://facebook.com"  class="fab fa-facebook-f"></a>
+               <a href="https://twitter.com"  class="fab fa-twitter"></a>
+               <a href="https://instagram.com"  class="fab fa-instagram"></a>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
